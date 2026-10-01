@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>About | Solyman Wasif</title>
+
+
+ <link rel="icon" type="image/png" href="..\assets\solyman_favicon.png" > 
+
+
+<link rel="stylesheet" href="../style.css">
+<style>
+
+
+.status-dot{
+
+    width:10px;
+
+    height:10px;
+
+    background:#00e5b0;
+
+    border-radius:50%;
+
+    display:block;
+
+    box-shadow:
+    0 0 10px #00e5b0;
+
+    animation:pulse 1.5s infinite;
+
+}
+
+
+
+.status-dot.offline{
+
+    background:#777;
+
+    box-shadow:none;
+
+    animation:none;
+
+}
+
+
+
+
+@keyframes pulse{
+
+
+50%{
+
+    transform:scale(1.5);
+
+    opacity:.5;
+
+}
+
+
+}
+
+
+
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+
+<div class="nav-logo">
+
+Solyman<span>.</span>
+
+</div>
+
+
+
+<button class="menu-toggle">
+
+☰
+
+</button>
+
+
+
+<nav class="nav-links">
+
+
+<a href="../index.html">
+Home
+</a>
+
+
+<a href="about.html" class="active">
+About
+</a>
+
+
+<a href="#">
+Projects
+</a>
+
+
+<a href="#">
+Skills
+</a>
+
+
+<a href="#">
+Contact
+</a>
+
+
+<a href="#" class="nav-btn">
+Hire Me
+</a>
+
+
+</nav>
+
+
+</header>
+
+
+<!-- ================= END NAVBAR ================= -->
+
+
+
+
+
+
+
+<!-- ================= ABOUT HERO ================= -->
+
+
+<section class="about-hero">
+
+
+<div class="about-hero-container">
+
+
+
+<div class="about-text">
+
+
+<p class="section-label">
+
+ABOUT ME
+
+</p>
+
+
+
+<h1>
+
+Building digital experiences
+with <span>purpose</span>
+and precision.
+
+</h1>
+
+
+
+<p>
+
+I am a frontend developer focused on creating
+modern, fast and user-friendly digital experiences.
+I transform ideas into reliable digital products
+through clean code, thoughtful design and
+continuous improvement.
+
+</p>
+
+
+
+<div class="buttons">
+
+
+<a href="../index.html#projects" class="primary-btn">
+
+View My Work →
+
+</a>
+
+
+<a href="#" class="secondary-btn">
+
+Contact Me
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="about-profile">
+
+
+<img src="../assets/profile.png" alt="Solyman Wasif">
+
+<div class="profile-card">
+
+    <span class="status-dot"></span>
+
+    <span class="status-text">
+        Loading...
+    </span>
+
+</div>
+
+
+<script>
+
+/* ================= AUTOMATIC AVAILABILITY STATUS ================= */
+
+
+function updateAvailability(){
+
+
+    const now = new Date();
+
+    const hour = now.getHours();
+
+
+
+    const card = document.querySelector(".profile-card");
+
+    const text = document.querySelector(".status-text");
+
+
+
+    /*
+    Available time:
+    9 AM - 10 PM
+
+    Change if needed
+    */
+
+
+    if(hour >= 9 && hour < 22){
+
+
+        card.classList.remove("offline");
+
+        card.classList.add("online");
+
+
+        text.innerHTML =
+        "Available for opportunities";
+
+
+    }
+
+
+    else{
+
+
+        card.classList.remove("online");
+
+        card.classList.add("offline");
+
+
+        text.innerHTML =
+        "Currently unavailable";
+
+
+    }
+
+
+}
+
+
+
+
+// Run when page loads
+
+updateAvailability();
+
+
+// Check every minute
+
+setInterval(updateAvailability,60000);
+
+
+
+</script>
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= STORY SECTION ================= -->
+
+
+<section class="about-story">
+
+<div class="about-title">
+
+<p class="section-label">
+
+MY JOURNEY
+
+</p>
+
+
+<h2>
+
+My journey as a developer
+
+</h2>
+
+
+</div>
+
+
+
+<div class="story-container">
+
+<p>
+
+My journey in development started with curiosity
+about how technology creates real-world solutions.
+Through learning, experimentation and building
+projects, I developed a passion for creating
+digital experiences.
+
+</p>
+
+
+
+<p>
+
+I focus on writing clean code, understanding user
+needs and building applications that are fast,
+scalable and easy to maintain.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= PHILOSOPHY ================= -->
+
+
+<section class="about-values">
+
+<div class="section-heading">
+
+
+<p class="section-label">
+
+MY VALUES
+
+</p>
+
+
+<h2>
+
+How I approach development
+
+</h2>
+
+
+</div>
+
+
+
+
+<div class="values-grid">
+
+
+<div class="value-box">
+
+<h3>
+Clean Engineering
+</h3>
+
+
+<p>
+
+Writing structured and maintainable code
+that grows with the project.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="value-box">
+
+<h3>
+User First
+</h3>
+
+
+<p>
+
+Creating simple and enjoyable experiences
+for real users.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="value-box">
+
+
+<h3>
+Problem Solving
+</h3>
+
+
+<p>
+
+Finding practical solutions for complex
+technical challenges.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="value-box">
+
+
+<h3>
+Continuous Learning
+</h3>
+
+
+<p>
+
+Always improving skills and exploring
+new technologies.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= TECHNOLOGY ================= -->
+
+
+<section class="about-technology">
+
+
+<div class="section-heading">
+
+
+<p class="section-label">
+
+EXPERTISE
+
+</p>
+
+
+<h2>
+
+Technologies I Work With
+
+</h2>
+
+
+</div>
+
+
+
+
+<div class="tech-container">
+
+<span class="tech-item">HTML</span>
+
+<span class="tech-item">CSS</span>
+
+<span class="tech-item">JavaScript</span>
+
+<span class="tech-item">React</span>
+
+<span class="tech-item">Next.js</span>
+
+<span class="tech-item">Node.js</span>
+
+<span class="tech-item">MongoDB</span>
+
+<span class="tech-item">Git</span>
+
+<span class="tech-item">Docker</span>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= CTA ================= -->
+
+
+<section class="home-cta">
+
+
+<div class="cta-box">
+
+
+<h2>
+
+Have an idea worth building?
+
+</h2>
+
+
+
+<p>
+
+Let's collaborate and create something meaningful.
+
+</p>
+
+
+
+<a href="#" class="primary-btn">
+
+Start Project →
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer class="footer">
+
+
+<div class="footer-container">
+
+
+
+<!-- BRAND AREA -->
+
+<div class="footer-brand">
+
+
+<div class="footer-logo">
+
+Solyman<span>.</span>
+
+</div>
+
+
+<p>
+
+Frontend Developer creating modern,
+responsive and high-performance digital
+experiences with clean code.
+
+</p>
+
+
+
+<div class="social-icons">
+
+<!-- GitHub -->
+
+<a href="https://github.com/Solymanwasif" target="_blank" title="GitHub">
+
+<img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" 
+alt="GitHub">
+
+</a>
+
+
+
+<!-- LinkedIn -->
+
+<a href="https://linkedin.com/" target="_blank" title="LinkedIn">
+
+<img src="https://raw.githubusercontent.com/Solymanwasif/b14-a1-ai-css-enhancement/refs/heads/main/image/linkin.png"
+alt="LinkedIn">
+
+</a>
+
+
+
+
+<!-- Facebook -->
+
+<a href="https://facebook.com/" target="_blank" title="Facebook">
+
+<img src="https://raw.githubusercontent.com/Solymanwasif/b14-a1-ai-css-enhancement/main/image/fb.png"
+alt="Facebook">
+
+</a>
+
+
+
+
+
+<!-- Instagram -->
+
+<a href="https://instagram.com/" target="_blank" title="Instagram">
+
+<img src="https://raw.githubusercontent.com/Solymanwasif/b14-a1-ai-css-enhancement/main/image/i.png"
+alt="Instagram" style=" width:130%;height:130%;object-fit:cover;border-radius:50%;">
+
+</a>
+
+
+
+
+
+
+<!-- YouTube -->
+
+<a href="https://youtube.com/" target="_blank" title="YouTube">
+
+<img src="https://img.magnific.com/premium-vector/youtube-app-round-icon-social-media-logo-vector-illustration_277909-797.jpg?semt=ais_hybrid&w=740&q=80"
+alt="YouTube">
+
+</a>
+
+
+
+
+
+
+<!-- Email -->
+
+<a href="mailto:hello@example.com" title="Email">
+
+<img src="https://thumbs.dreamstime.com/b/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C-201003176.jpg"
+alt="Email">
+
+</a>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- NAVIGATION -->
+
+
+<div class="footer-column">
+
+
+<h3>
+Navigation
+</h3>
+
+
+<a href="index.html">
+Home
+</a>
+
+
+<a href="about/about.html">
+About
+</a>
+
+
+<a href="#">
+Projects
+</a>
+
+
+<a href="#">
+Skills
+</a>
+
+
+<a href="#">
+Contact
+</a>
+
+
+</div>
+
+
+
+
+
+<!-- SERVICES -->
+
+
+<div class="footer-column">
+
+
+<h3>
+Services
+</h3>
+
+
+<a href="#">
+Frontend Development
+</a>
+
+
+<a href="#">
+React Development
+</a>
+
+
+<a href="#">
+UI Implementation
+</a>
+
+
+<a href="#">
+Web Optimization
+</a>
+
+
+<a href="#">
+Full Stack Solutions
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<div class="footer-column">
+
+
+<h3>
+Contact
+</h3>
+
+
+<p>
+📍 Bangladesh
+</p>
+
+
+<p>
+✉ hello@solyman.dev
+</p>
+
+
+<p>
+Available for freelance
+</p>
+
+
+<a class="footer-btn" href="#">
+Let's Talk →
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<!-- BOTTOM -->
+
+
+<div class="footer-bottom">
+
+
+<p>
+© 2026 Solyman Wasif. All Rights Reserved.
+</p>
+
+
+<div>
+
+<a href="#">
+Privacy Policy
+</a>
+
+<span>|</span>
+
+<a href="#">
+Terms
+</a>
+
+</div>
+
+
+</div>
+
+
+</footer>
+
+
+
+<script>
+
+/* =====================================================
+   MOBILE NAVBAR TOGGLE
+===================================================== */
+
+
+const menuBtn = document.querySelector(".menu-toggle");
+
+const navLinks = document.querySelector(".nav-links");
+
+
+
+menuBtn.addEventListener("click",()=>{
+
+
+    navLinks.classList.toggle("active");
+
+
+});
+
+
+
+</script>
+
+
+</body>
+
+</html>

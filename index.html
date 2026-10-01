@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solyman Wasif | Frontend Developer</title>
+   <link rel="icon" type="image/png" href=".\assets\solyman_favicon.png" >  
+  <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+
+    <!-- Logo -->
+    <div class="nav-logo">
+
+        Solyman<span>.</span>
+
+    </div>
+
+
+
+    <!-- Mobile Menu Button -->
+    <button class="menu-toggle">
+
+        ☰
+
+    </button>
+
+
+
+
+
+    <!-- Navigation Links -->
+
+    <nav class="nav-links">
+
+
+        <a href="index.html" class="active">
+            Home
+        </a>
+
+
+        <a href="about/about.html">
+            About
+        </a>
+
+
+        <a href="#">
+            Projects
+        </a>
+
+
+        <a href="#">
+            Skills
+        </a>
+
+
+        <a href="#">
+            Contact
+        </a>
+
+
+
+        <!-- CTA Button -->
+
+        <a href="#" class="nav-btn">
+
+            Hire Me
+
+        </a>
+
+
+    </nav>
+
+
+</header>
+
+
+<!-- ================= END NAVBAR ================= -->
+
+<section class="hero">
+
+    <div class="overlay"></div>
+
+
+    <div class="hero-wrapper">
+
+
+        <!-- LEFT CONTENT -->
+        <div class="hero-content">
+
+            <p class="top-text">
+                &lt;/&gt; CODE / BUILD / IMPROVE
+            </p>
+
+            <h1>
+                Hi, I'm <br>
+                <span>Solyman Wasif</span>
+            </h1>
+
+            <h2>
+                Frontend Developer
+            </h2>
+
+            <p class="description">
+                I build modern, fast and user-friendly web experiences 
+                using frontend technologies. Turning ideas into real 
+                products, one commit at a time.
+            </p>
+
+
+            <div class="buttons">
+
+                <a href="#" class="primary-btn">
+                    View My Work →
+                </a>
+
+                <a href="#" class="secondary-btn">
+                    Get In Touch
+                </a>
+
+            </div>
+
+
+            <div class="skills">
+
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JS</div>
+                <div>React</div>
+                <div>Node.js</div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <!-- PROFILE IMAGE SECTION -->
+        <!-- ADD YOUR PROFILE IMAGE HERE -->
+
+        <div class="profile-image">
+
+
+            <img src="./assets/profile.png"
+            alt="Developer Profile">
+
+
+  <div class="profile-card">
+
+    <span class="status-dot"></span>
+
+    <span class="status-text">
+        Loading...
+    </span>
+
+</div>
+
+
+<script>
+
+/* ================= BD TIME AVAILABILITY STATUS ================= */
+
+
+function updateAvailability(){
+
+
+    // Bangladesh Time (UTC +6)
+
+    const bdTime = new Date().toLocaleString("en-US", {
+
+        timeZone: "Asia/Dhaka"
+
+    });
+
+
+
+    const now = new Date(bdTime);
+
+
+    const hour = now.getHours();
+
+
+
+    const card = document.querySelector(".profile-card");
+
+    const text = document.querySelector(".status-text");
+
+
+
+    /*
+        Working hours:
+        9 AM - 10 PM Bangladesh Time
+    */
+
+
+    if(hour >= 9 && hour < 22){
+
+
+        card.classList.add("online");
+
+        card.classList.remove("offline");
+
+
+        text.innerHTML =
+        "Available for opportunities";
+
+
+    }
+
+
+    else{
+
+
+        card.classList.add("offline");
+
+        card.classList.remove("online");
+
+
+        text.innerHTML =
+        "Currently unavailable";
+
+
+    }
+
+
+}
+
+
+
+
+// Run immediately
+
+updateAvailability();
+
+
+// Update every 1 minute
+
+setInterval(updateAvailability,60000);
+
+
+</script>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+</section>
+<!-- ================= STATS SECTION ================= -->
+
+<section class="stats-section">
+
+<div class="stats-container">
+
+
+<div class="stat-box">
+
+<h2>5+</h2>
+
+<p>
+Years Experience
+</p>
+
+</div>
+
+
+
+<div class="stat-box">
+
+<h2>40+</h2>
+
+<p>
+Projects Completed
+</p>
+
+</div>
+
+
+
+
+<div class="stat-box">
+
+<h2>15+</h2>
+
+<p>
+Technologies
+</p>
+
+</div>
+
+
+
+
+<div class="stat-box">
+
+<h2>20+</h2>
+
+<p>
+Happy Clients
+</p>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= ABOUT PREVIEW ================= -->
+
+
+<section class="about-preview">
+
+
+<div class="about-container">
+
+
+
+<div class="about-content">
+
+
+<p class="section-label">
+WHO I AM
+</p>
+
+
+<h2>
+Building digital experiences that make an impact.
+</h2>
+
+
+
+<p>
+
+I am a frontend developer focused on creating modern,
+fast and user-friendly web experiences. I transform
+ideas into responsive digital products with clean
+code, thoughtful design and attention to detail.
+
+</p>
+
+
+
+<a href="about/about.html" class="primary-btn">
+More About Me →
+</a>
+
+
+
+</div>
+
+
+
+
+
+<div class="about-card">
+
+
+<div class="about-card-item">
+
+<span>01</span>
+
+<h3>
+Frontend Development
+</h3>
+
+<p>
+Creating modern interfaces with clean UI and smooth experiences.
+</p>
+
+</div>
+
+
+
+
+<div class="about-card-item">
+
+<span>02</span>
+
+<h3>
+Problem Solving
+</h3>
+
+<p>
+Turning complex ideas into simple digital solutions.
+</p>
+
+</div>
+
+
+
+
+<div class="about-card-item">
+
+<span>03</span>
+
+<h3>
+Continuous Learning
+</h3>
+
+<p>
+Always improving skills and exploring new technologies.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= SERVICES SECTION ================= -->
+
+
+<section class="services-section">
+
+
+<div class="section-heading">
+
+
+<p class="section-label">
+WHAT I BUILD
+</p>
+
+
+<h2>
+Services & Expertise
+</h2>
+
+
+</div>
+
+
+
+
+<div class="service-grid">
+
+
+
+<div class="service-card">
+
+
+<div class="service-icon">
+01
+</div>
+
+
+<h3>
+Frontend Development
+</h3>
+
+
+<p>
+
+Responsive and interactive user interfaces
+built with modern frontend technologies.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="service-card">
+
+
+<div class="service-icon">
+02
+</div>
+
+
+<h3>
+UI Implementation
+</h3>
+
+
+<p>
+
+Converting designs into pixel-perfect,
+high-performance websites.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="service-card">
+
+
+<div class="service-icon">
+03
+</div>
+
+
+<h3>
+Full Stack Solutions
+</h3>
+
+
+<p>
+
+Building complete applications from frontend
+interfaces to backend integration.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="service-card">
+
+
+<div class="service-icon">
+04
+</div>
+
+
+<h3>
+Web Optimization
+</h3>
+
+
+<p>
+
+Improving speed, responsiveness and
+overall user experience.
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+<!-- ================= PROJECTS SECTION ================= -->
+
+
+<section class="projects-section">
+
+
+<div class="section-heading">
+
+<p class="section-label">
+MY WORK
+</p>
+
+<h2>
+Featured Projects
+</h2>
+
+</div>
+
+
+
+<div class="project-grid">
+
+
+
+<div class="project-card">
+
+
+<img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=900">
+
+
+<div class="project-content">
+
+
+<h3>
+AI SaaS Dashboard
+</h3>
+
+
+<p>
+A modern analytics dashboard with clean UI,
+real-time data visualization and scalable architecture.
+</p>
+
+
+<div class="project-tags">
+
+<span>React</span>
+<span>Node.js</span>
+<span>API</span>
+
+</div>
+
+
+<a href="#">
+View Project →
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="project-card">
+
+
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900">
+
+
+<div class="project-content">
+
+
+<h3>
+E-Commerce Platform
+</h3>
+
+
+<p>
+A complete online shopping experience focused
+on performance, usability and responsive design.
+</p>
+
+
+<div class="project-tags">
+
+<span>Next.js</span>
+<span>Database</span>
+<span>Cloud</span>
+
+</div>
+
+
+<a href="#">
+View Project →
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="project-card">
+
+
+<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900">
+
+
+<div class="project-content">
+
+
+<h3>
+Cloud Management System
+</h3>
+
+
+<p>
+A scalable application architecture with
+secure backend services and deployment workflow.
+</p>
+
+
+<div class="project-tags">
+
+<span>Docker</span>
+<span>DevOps</span>
+<span>Linux</span>
+
+</div>
+
+
+<a href="#">
+View Project →
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= DEVELOPMENT PROCESS ================= -->
+
+
+<section class="process-section">
+
+
+<div class="section-heading">
+
+
+<p class="section-label">
+WORKFLOW
+</p>
+
+
+<h2>
+How I Build Products
+</h2>
+
+
+</div>
+
+
+
+
+
+<div class="process-grid">
+
+
+
+<div class="process-card">
+
+<span>01</span>
+
+<h3>
+Discover
+</h3>
+
+<p>
+Understanding goals, users and project requirements.
+</p>
+
+</div>
+
+
+
+
+
+<div class="process-card">
+
+<span>02</span>
+
+<h3>
+Design
+</h3>
+
+<p>
+Creating clear interfaces and technical solutions.
+</p>
+
+</div>
+
+
+
+
+
+<div class="process-card">
+
+<span>03</span>
+
+<h3>
+Develop
+</h3>
+
+<p>
+Building clean, scalable and maintainable code.
+</p>
+
+</div>
+
+
+
+
+
+<div class="process-card">
+
+<span>04</span>
+
+<h3>
+Deploy
+</h3>
+
+<p>
+Testing, optimizing and launching the final product.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= TECHNOLOGY STACK ================= -->
+
+
+<section class="technology-section">
+
+
+<div class="section-heading">
+
+
+<p class="section-label">
+TECHNOLOGY
+</p>
+
+
+<h2>
+My Tech Stack
+</h2>
+
+
+</div>
+
+
+
+
+<div class="technology-grid">
+
+
+<div class="technology-box">
+
+
+<h3>
+Frontend
+</h3>
+
+
+<div>
+
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>React</span>
+<span>Next.js</span>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="technology-box">
+
+
+<h3>
+Backend
+</h3>
+
+
+<div>
+
+<span>Node.js</span>
+<span>Express</span>
+<span>REST API</span>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="technology-box">
+
+
+<h3>
+Database
+</h3>
+
+
+<div>
+
+<span>MongoDB</span>
+<span>PostgreSQL</span>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="technology-box">
+
+
+<h3>
+Tools
+</h3>
+
+
+<div>
+
+<span>Git</span>
+<span>Docker</span>
+<span>Linux</span>
+<span>CI/CD</span>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= CTA ================= -->
+
+
+<section class="home-cta">
+
+
+<div class="cta-box">
+
+
+<h2>
+Have an idea worth building?
+</h2>
+
+
+<p>
+Let's create a modern digital product
+that delivers real value.
+</p>
+
+
+<a href="#" class="primary-btn">
+Start A Project →
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= PROFESSIONAL FOOTER ================= -->
+
+<footer class="footer">
+
+
+<div class="footer-container">
+
+
+
+<!-- BRAND AREA -->
+
+<div class="footer-brand">
+
+
+<div class="footer-logo">
+
+Solyman<span>.</span>
+
+</div>
+
+
+<p>
+
+Frontend Developer creating modern,
+responsive and high-performance digital
+experiences with clean code.
+
+</p>
+
+
+
+<div class="social-icons">
+
+<!-- GitHub -->
+
+<a href="https://github.com/Solymanwasif" target="_blank" title="GitHub">
+
+<img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" 
+alt="GitHub">
+
+</a>
+
+
+
+<!-- LinkedIn -->
+
+<a href="https://linkedin.com/" target="_blank" title="LinkedIn">
+
+<img src="https://raw.githubusercontent.com/Solymanwasif/b14-a1-ai-css-enhancement/refs/heads/main/image/linkin.png"
+alt="LinkedIn">
+
+</a>
+
+
+
+
+<!-- Facebook -->
+
+<a href="https://facebook.com/" target="_blank" title="Facebook">
+
+<img src="https://raw.githubusercontent.com/Solymanwasif/b14-a1-ai-css-enhancement/main/image/fb.png"
+alt="Facebook">
+
+</a>
+
+
+
+
+
+<!-- Instagram -->
+
+<a href="https://instagram.com/" target="_blank" title="Instagram">
+
+<img src="https://raw.githubusercontent.com/Solymanwasif/b14-a1-ai-css-enhancement/main/image/i.png"
+alt="Instagram" style=" width:130%;height:130%;object-fit:cover;border-radius:50%;">
+
+</a>
+
+
+
+
+
+
+<!-- YouTube -->
+
+<a href="https://youtube.com/" target="_blank" title="YouTube">
+
+<img src="https://img.magnific.com/premium-vector/youtube-app-round-icon-social-media-logo-vector-illustration_277909-797.jpg?semt=ais_hybrid&w=740&q=80"
+alt="YouTube">
+
+</a>
+
+
+
+
+
+
+<!-- Email -->
+
+<a href="mailto:hello@example.com" title="Email">
+
+<img src="https://thumbs.dreamstime.com/b/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C-201003176.jpg"
+alt="Email">
+
+</a>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- NAVIGATION -->
+
+
+<div class="footer-column">
+
+
+<h3>
+Navigation
+</h3>
+
+
+<a href="index.html">
+Home
+</a>
+
+
+<a href="about/about.html">
+About
+</a>
+
+
+<a href="#">
+Projects
+</a>
+
+
+<a href="#">
+Skills
+</a>
+
+
+<a href="#">
+Contact
+</a>
+
+
+</div>
+
+
+
+
+
+<!-- SERVICES -->
+
+
+<div class="footer-column">
+
+
+<h3>
+Services
+</h3>
+
+
+<a href="#">
+Frontend Development
+</a>
+
+
+<a href="#">
+React Development
+</a>
+
+
+<a href="#">
+UI Implementation
+</a>
+
+
+<a href="#">
+Web Optimization
+</a>
+
+
+<a href="#">
+Full Stack Solutions
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<div class="footer-column">
+
+
+<h3>
+Contact
+</h3>
+
+
+<p>
+📍 Bangladesh
+</p>
+
+
+<p>
+✉ hello@solyman.dev
+</p>
+
+
+<p>
+Available for freelance
+</p>
+
+
+<a class="footer-btn" href="#">
+Let's Talk →
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<!-- BOTTOM -->
+
+
+<div class="footer-bottom">
+
+
+<p>
+© 2026 Solyman Wasif. All Rights Reserved.
+</p>
+
+
+<div>
+
+<a href="#">
+Privacy Policy
+</a>
+
+<span>|</span>
+
+<a href="#">
+Terms
+</a>
+
+</div>
+
+
+</div>
+
+
+</footer>
+</body>
+</html>

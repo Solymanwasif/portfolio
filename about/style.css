@@ -1,0 +1,895 @@
+/* =====================================================
+   ABOUT PAGE ONLY CSS
+===================================================== */
+
+
+/* ================= ABOUT HERO ================= */
+
+.about-hero{
+
+    min-height:100vh;
+
+    padding:140px 8% 80px;
+
+    background:#050b16;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+
+.about-hero-container{
+
+    max-width:1200px;
+
+    width:100%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 0.8fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+
+
+/* LEFT CONTENT */
+
+
+.about-text .section-label{
+
+    color:#00e5b0;
+
+    letter-spacing:5px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.about-text h1{
+
+    font-size:64px;
+
+    line-height:1.1;
+
+    font-weight:800;
+
+    letter-spacing:-2px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.about-text h1 span{
+
+    color:#00e5b0;
+
+}
+
+
+
+.about-text p{
+
+    color:#aab6c8;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    max-width:600px;
+
+}
+
+
+
+/* IMAGE */
+
+
+.about-profile{
+
+    position:relative;
+
+}
+
+
+
+.about-profile img{
+
+    width:100%;
+
+    height:560px;
+
+    object-fit:cover;
+
+    border-radius:35px;
+
+    border:1px solid rgba(0,229,176,.25);
+
+    box-shadow:
+
+    0 0 50px rgba(0,229,176,.15);
+
+}
+
+
+
+
+.about-profile:before{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+
+    height:250px;
+
+    right:-20px;
+
+    top:20%;
+
+    background:#00e5b0;
+
+    filter:blur(120px);
+
+    opacity:.25;
+
+}
+
+
+
+
+
+/* STATUS CARD */
+
+
+.profile-card{
+
+    position:absolute;
+
+    bottom:25px;
+
+    left:25px;
+
+    padding:15px 25px;
+
+    background:rgba(5,11,22,.85);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:15px;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+
+.profile-card span{
+
+    width:10px;
+
+    height:10px;
+
+    background:#00e5b0;
+
+    border-radius:50%;
+
+}
+
+
+
+
+
+/* ================= STORY SECTION ================= */
+
+
+.about-story{
+
+    padding:100px 8%;
+
+    background:#081426;
+
+}
+
+
+
+.about-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+
+
+.about-title .section-label{
+
+    color:#00e5b0;
+
+    letter-spacing:5px;
+
+}
+
+
+
+.about-title h2{
+
+    font-size:45px;
+
+    margin-top:15px;
+
+}
+
+
+
+.story-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:45px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+}
+
+
+
+.story-container p{
+
+    color:#aab6c8;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+
+
+/* ================= VALUES ================= */
+
+
+.about-values{
+
+    padding:100px 8%;
+
+    background:#050b16;
+
+}
+
+
+
+.values-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.value-box{
+
+    padding:35px 25px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.value-box:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#00e5b0;
+
+}
+
+
+
+.value-box h3{
+
+    font-size:20px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.value-box p{
+
+    color:#8896a4;
+
+    line-height:1.7;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+
+
+/* ================= TECHNOLOGY ================= */
+
+
+.about-technology{
+
+    padding:100px 8%;
+
+    background:#081426;
+
+}
+
+
+
+.tech-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+
+
+.tech-item{
+
+    padding:14px 25px;
+
+    border-radius:30px;
+
+    background:rgba(0,229,176,.08);
+
+    border:1px solid rgba(0,229,176,.2);
+
+    color:#00e5b0;
+
+    transition:.3s;
+
+}
+
+
+
+.tech-item:hover{
+
+    background:#00e5b0;
+
+    color:#050b16;
+
+}
+
+
+
+
+
+
+
+/* ================= ABOUT CTA ================= */
+
+
+.about-contact{
+
+    padding:100px 8%;
+
+    background:#050b16;
+
+}
+
+
+
+.about-contact-box{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:70px 40px;
+
+    text-align:center;
+
+    border-radius:35px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(0,229,176,.2);
+
+}
+
+
+
+.about-contact-box h2{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.about-contact-box p{
+
+    color:#8896a4;
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:1100px){
+
+
+.about-hero-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.about-profile{
+
+    max-width:500px;
+
+    margin:auto;
+
+}
+
+
+
+.values-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+}
+
+
+
+
+@media(max-width:700px){
+
+
+.about-hero{
+
+    padding:120px 6% 70px;
+
+}
+
+
+
+.about-text h1{
+
+    font-size:42px;
+
+}
+
+
+
+.about-profile img{
+
+    height:420px;
+
+}
+
+
+
+.values-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.story-container{
+
+    padding:25px;
+
+}
+
+
+
+.about-contact-box h2{
+
+    font-size:32px;
+
+}
+
+
+}
+/* =====================================================
+   NAVBAR STYLE
+===================================================== */
+
+
+.navbar{
+
+
+    width:100%;
+
+    padding:25px 8%;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+
+    z-index:100;
+
+
+}
+
+
+
+
+
+/* LOGO */
+
+
+.nav-logo{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+}
+
+
+
+.nav-logo span{
+
+    color:#00e5b0;
+
+}
+
+
+
+
+
+
+/* DESKTOP MENU */
+
+
+.nav-links{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+
+}
+
+
+
+.nav-links a{
+
+
+    text-decoration:none;
+
+    color:#aab6c8;
+
+    font-size:15px;
+
+    font-weight:500;
+
+
+    transition:.3s ease;
+
+
+}
+
+
+
+.nav-links a:hover{
+
+
+    color:#00e5b0;
+
+
+}
+
+
+
+.nav-links .active{
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+/* HIRE BUTTON */
+
+
+.nav-btn{
+
+
+    padding:12px 28px;
+
+
+    border-radius:30px;
+
+
+    background:#00e5b0;
+
+
+    color:#050b16!important;
+
+
+    font-weight:700!important;
+
+
+}
+
+
+
+.nav-btn:hover{
+
+
+    transform:translateY(-3px);
+
+
+    box-shadow:0 10px 30px rgba(0,229,176,.35);
+
+
+}
+
+
+
+
+
+
+/* MOBILE BUTTON */
+
+
+.menu-toggle{
+
+
+    display:none;
+
+
+    width:42px;
+
+    height:35px;
+
+
+    background:none;
+
+    border:none;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+.menu-toggle span{
+
+
+    display:block;
+
+
+    height:3px;
+
+    width:25px;
+
+
+    background:white;
+
+
+    margin:5px 0;
+
+
+    border-radius:5px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   RESPONSIVE NAVBAR
+===================================================== */
+
+
+@media(max-width:900px){
+
+
+
+.navbar{
+
+
+    padding:20px 6%;
+
+
+}
+
+
+
+
+.menu-toggle{
+
+
+    display:block;
+
+
+}
+
+
+
+
+
+
+.nav-links{
+
+
+    position:absolute;
+
+
+    top:80px;
+
+
+    left:6%;
+
+    right:6%;
+
+
+    padding:30px;
+
+
+    border-radius:20px;
+
+
+    background:#081426;
+
+
+    border:1px solid rgba(255,255,255,.1);
+
+
+    display:none;
+
+
+    flex-direction:column;
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+.nav-links.active{
+
+
+    display:flex;
+
+
+}
+
+
+
+
+
+.nav-btn{
+
+
+    width:100%;
+
+    text-align:center;
+
+
+}
+
+
+
+}
